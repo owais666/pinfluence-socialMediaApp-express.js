@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="/images/pinterest.ico">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body> 
+  <% if(nav === true){ %>
+<div class="w-full px-10 py-3 flex justify-between bg-zinc-800 text-white items-center">
+    <h3 class="uppercase">Pinfluence</h3>
+    <div class="flex gap-10 items-center">
+      <a class="px-5  py-2 rounded-full hover:bg-yellow-500 hover:text-black" href="/profile">Profile</a>
+      <a class="px-5  py-2 rounded-full hover:bg-yellow-500 hover:text-black" href="/feed">Feeds</a>
+      <a class="px-4 py-2 bg-red-700 text-white rounded-full hover:bg-red-900 " href="/logout">Logout</a>
+    </div>
+  </div>
+<%  }%>
+  
